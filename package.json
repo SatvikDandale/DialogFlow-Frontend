@@ -8,6 +8,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.50",
     "axios": "^0.21.0",
+    "http-server": "^0.12.3",
     "particles-bg": "^2.4.6",
     "react": "^16.13.1",
     "react-custom-scrollbars": "^4.2.1",
