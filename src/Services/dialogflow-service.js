@@ -1,13 +1,13 @@
-import { apiCall, serverBaseURL } from "./apiService";
+import { apiCall } from "./apiService";
 
 export function checkServer() {
-  return apiCall("GET", serverBaseURL + "/");
+  return apiCall("GET", "/");
 }
 
 export function getIntents() {
-  return apiCall("GET", serverBaseURL + "/getAllIntents");
+  return apiCall("GET", "/getAllIntents");
 }
 
 export function sendQuery(queryObject) {
-  return apiCall("POST", serverBaseURL + "/query", queryObject);
+  return apiCall("POST", "/query", queryObject);
 }

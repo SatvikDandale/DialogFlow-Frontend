@@ -1,17 +1,34 @@
 import axios from "axios";
+export const serverBaseURL = `https://dialogflow-server-nodejs.herokuapp.com`;
+axios.defaults.baseURL = serverBaseURL;
 
-export const serverBaseURL = ``;
+var instance = axios.create({
+  url: "/",
+  baseURL: serverBaseURL,
+  timeout: 4000,
+});
 
 // A generalized method for HTTP REST APIs
 export function apiCall(method, path, data = null) {
   return new Promise((resolve, reject) => {
     path = path.replace(/\/\//g, "/");
-    return axios[method.toLowerCase()](path, data)
-      .then((res) => {
-        return resolve(res.data);
-      })
-      .catch((err) => {
-        return reject(err);
-      });
+    if (method === "GET")
+      return instance
+        .get(path)
+        .then((res) => {
+          return resolve(res.data);
+        })
+        .catch((err) => {
+          return reject(err);
+        });
+    else
+      instance
+        .post(path, data)
+        .then((res) => {
+          return resolve(res.data);
+        })
+        .catch((err) => {
+          return reject(err);
+        });
   });
 }
