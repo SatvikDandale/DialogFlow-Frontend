@@ -4,10 +4,10 @@ import { Switch, Route, HashRouter } from "react-router-dom";
 
 // COMPONENTS
 import Welcome from "./Components/Welcome/welcome";
+import MainScreen from "./Screens/mainScreen";
 
 // CSS FILES
 import "./App.css";
-import MainScreen from "./Screens/mainScreen";
 
 function App() {
   useEffect(() => {

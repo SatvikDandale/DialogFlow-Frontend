@@ -7,8 +7,9 @@ import {
   Snackbar,
 } from "@material-ui/core";
 
-import "./welcome.css";
 import { checkServer } from "../../Services/dialogflow-service";
+
+import "./welcome.css";
 
 export default function Welcome(props) {
   useEffect(() => {
