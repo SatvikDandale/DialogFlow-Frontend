@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const serverBaseURL = `https://dialogflow-server-nodejs.herokuapp.com`;
+export const serverBaseURL = ``;
 
 // A generalized method for HTTP REST APIs
 export function apiCall(method, path, data = null) {
