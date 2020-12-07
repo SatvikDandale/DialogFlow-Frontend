@@ -1,0 +1,10 @@
+.main__screen {
+  height: 95%;
+  width: 98%;
+  background-color: rgb(237, 239, 253);
+  display: flex;
+}
+
+.divider__pane {
+  position: relative !important;
+}

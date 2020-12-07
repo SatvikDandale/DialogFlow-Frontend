@@ -1,0 +1,16 @@
+.message {
+  min-height: 3rem;
+  margin: 10px;
+  display: flex;
+}
+
+.self {
+  justify-content: flex-end;
+}
+.content {
+  width: fit-content;
+  max-width: 90%;
+  background-color: rgb(218, 218, 253);
+  border-radius: 10px;
+  padding: 10px;
+}

@@ -1,0 +1,15 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hello {
+  color: white;
+  font-weight: 800;
+  text-shadow: 1px 1px lightslategrey;
+}
+
+.MuiButton-containedPrimary {
+  border-radius: 0;
+}

@@ -1,0 +1,14 @@
+.intent__list,
+.intent_list_items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loading {
+  height: auto;
+}
+.intent_list_items {
+  justify-content: center;
+}
